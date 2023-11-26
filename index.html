@@ -198,6 +198,32 @@
 </footer>
 
 <script>
+    //Code to autosave all the progress
+    document.addEventListener('DOMContentLoaded', function () {
+            // Get all checkboxes
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            // Load checkbox states from local storage
+            checkboxes.forEach(function (checkbox) {
+                const checkboxId = checkbox.id;
+                const checkboxState = localStorage.getItem(checkboxId);
+
+                if (checkboxState === 'checked') {
+                    checkbox.checked = true;
+                }
+            });
+
+            // Add event listener to save checkbox states to local storage on change
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    const checkboxId = checkbox.id;
+                    const checkboxState = checkbox.checked ? 'checked' : 'unchecked';
+
+                    // Save checkbox state to local storage
+                    localStorage.setItem(checkboxId, checkboxState);
+                });
+            });
+        });
     // Set the date of your event
     const eventDate = new Date('2024-01-24T00:00:00Z').getTime();
 

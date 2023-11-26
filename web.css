@@ -1,0 +1,57 @@
+*{background-color: black;}
+#h1{color: aliceblue;
+text-align: center;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Work Sans', sans-serif;}
+#div1{
+    color: aliceblue;
+    width: 30%;
+    /* border: 5px solid white; */
+    border-right: 1px dotted white;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+h2{text-align: center;}
+#div2{
+    color: aliceblue;
+    width: 30%;
+    
+    /* border: 5px solid white; */
+    position: absolute;
+    left: 67%;
+    top: 20%;
+}
+#div3{
+    color: aliceblue;
+    width: 30%;
+
+    /* border: 5px solid white; */
+    border-right: 1px dotted white;
+    position: absolute;
+    left: 34%;
+    top: 20%;
+}
+#heading{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+
+}
+h2{font-family: 'Caveat', cursive;
+font-family: 'Work Sans', sans-serif;}
+#body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 50px;
+color: aliceblue;
+position: absolute;
+top: 65%;
+width: 50%;
+margin-left: 25%;
+}
+
+#countdown {
+font-size: 24px;
+}
